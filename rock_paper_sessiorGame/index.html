@@ -1,35 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-        <div>
-            <h2 style="height:30px; color: green; ">Your Choice: <span id="user-choice"></span></h2>
-            <h2 style="height:30px; color: red;">Computer Choice: <span id="computer-choice"></span></h2>
-            <h2 style="height:30px; color: blue; ">Result: <span id="result"></span></h2>
-            <img id="rock_img" style="height: 100px; width:200px;" src="https://images.pexels.com/photos/161702/harmony-relax-rock-moqui-161702.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Italian Trulli">
-        </div>
-        <div>
-            <button
-                style=" color: white; background: #000; padding: 10px; margin: 10px;  width: 80px; border-radius: 15px;"
-                id="rock">Rock</button>
-            <button
-                style=" color: white; background: #000; padding: 10px; margin: 10px; width: 80px;  border-radius: 15px;"
-                id="paper">Paper</button>
-            <button
-                style=" color: white; background: #000; padding: 10px; margin: 10px;  width: 80px;  border-radius: 15px;"
-                id="scissors">Scissors</button>
-        </div>
-
+    <h1>Rock Paper Scissors Game</h1>
+    <p>Choose your move:</p>
+    <div class="buttons">
+        <button id="rock">&#x1F44A;</button>
+        <button id="paper">&#x1f590;</button>
+        <button id="scissors">&#x270c;</button>
     </div>
-
-    <script src="script.js"></script>
+    <p id="result"></p>
+    <p id="scores">
+        Your choice: <span id="user-choice">0</span><br>
+        Computer choice: <span id="computer-choice">0</span><br><br>
+        Your score: <span id="user-score">0</span>
+        Computer score: <span id="computer-score">0</span>
+    </p>
+    <script src="index.js"></script>
 </body>
-
 </html>
